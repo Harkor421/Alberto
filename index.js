@@ -100,7 +100,7 @@ Client.on('message', async (message) => {
 })
 
 
-Client.login("NzczMjQ3NjQ1MTMyMTI4MjU3.X6Gc_A.HNjoinDplHZjLtzAo5RWVshYXtk"); 
+Client.login("NzczMjQ3NjQ1MTMyMTI4MjU3.X6Gc_A.Pd4epphhif1ElWi2IpuwlToSlVw"); 
 
 
 
