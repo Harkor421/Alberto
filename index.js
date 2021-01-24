@@ -5,7 +5,7 @@ const paginationEmbed = require('discord.js-pagination');
 
 const { MessageCollector } = require("discord.js-collector");
 
-// Perfil del  bot
+// Bot's Profile
 
 Client.on('ready', (oldmember, newmember) => {
     console.log("Alberto operando");
@@ -97,67 +97,11 @@ Client.on('message', async (message) => {
         paginationEmbed(message, pages, emojiList, timeout);
 
         }
-    
-
-
-    if (message.content.startsWith(prefix + "velocity")) {
-      const velocity = new Discord.MessageEmbed() 
-      .setColor('#fffafa')
-      .setTitle("Velocity Formulae")
-      .setAuthor('Albert', '', '')
-      .setDescription("v = Velocity | t = Time | s = Distance Travelled | a = Accelaration | u = Initial Velocity")
-      .setImage('https://cdn.discordapp.com/attachments/484471959623696394/777592292060037130/velocidad.png')
-      .setFooter('Albert is always right', '');
-      message.channel.send(velocity)
-    }
-   
-    if (message.content.startsWith(prefix + "acceleration")) {
-        const velocity = new Discord.MessageEmbed() 
-        .setColor('#fffafa')
-        .setTitle("Acceleration Formulae")
-        .setAuthor('Albert', '', '')
-        .setDescription("v = Velocity | t = Time | s = Distance Travelled | a = Accelaration | u = Initial Velocity | F = Force | m = Mass")
-        .setImage('https://cdn.discordapp.com/attachments/758102244905582613/777618773053538394/unknown.png')
-        .setFooter('Albert is always right', '');
-        message.channel.send(velocity)
-      }
-
-      if (message.content.startsWith(prefix + "time")) {
-        const velocity = new Discord.MessageEmbed() 
-        .setColor('#fffafa')
-        .setTitle("Time Formulae")
-        .setAuthor('Albert', '', '')
-        .setDescription("v = Velocity | t = Time | s = Distance Travelled | a = Accelaration | u = Initial Velocity")
-        .setImage('https://cdn.discordapp.com/attachments/758102244905582613/777594442860331018/unknown.png')
-        .setFooter('Albert is always right', '');
-        message.channel.send(velocity)
-      }
-
-      if (message.content.startsWith(prefix + "force")) {
-        const velocity = new Discord.MessageEmbed() 
-        .setColor('#fffafa')
-        .setTitle("Force Formulae")
-        .setAuthor('Albert', '', '')
-        .setDescription("m = Mass | f = Friction | a = Accelaration | F = Force")
-        .setImage('https://cdn.discordapp.com/attachments/758102244905582613/777594942574821386/unknown.png')
-        .setFooter('Albert is always right', '');
-        message.channel.send(velocity)
-      }
-
-
-
-
-
-
-    
-
-    
-
 
   
 }
     catch (err) {
-        console.log("error con los comandos")
+        console.log("Error with the commmands")
     }
 
 })
