@@ -17,12 +17,6 @@ Client.on('ready', (oldmember, newmember) => {
 
 
 
-
-
-
-
-
-
 // Text Commands
 
 Client.on('message', async (message) => {
@@ -33,7 +27,6 @@ Client.on('message', async (message) => {
 
 
     if (message.content.startsWith(prefix + "help")) {    
-        console.log('Alguien esta usando al bot')  
         const { MessageEmbed } = require('discord.js');
         
         const glossary = new MessageEmbed() 
