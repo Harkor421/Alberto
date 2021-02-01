@@ -100,7 +100,7 @@ Client.on('message', async (message) => {
 })
 
 
-Client.login(""); 
+Client.login(process.env.token); 
 
 
 
