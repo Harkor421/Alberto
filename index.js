@@ -10,8 +10,7 @@ const { MessageCollector } = require("discord.js-collector");
 Client.on('ready', (oldmember, newmember) => {
     console.log("Alberto operando");
     Client.user.setActivity("_help", {
-        type: "STREAMING",
-        url: "https://www.twitch.tv/harkorfn"      
+        type: "PLAYING",
     });
 });
 
