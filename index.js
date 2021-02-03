@@ -26,7 +26,7 @@ Client.on('message', async (message) => {
 
 if (message.content.startsWith(prefix + "help"))
 
-var glossary = new MessageEmbed() 
+const glossary = new Discord.MessageEmbed() 
 .setColor('#fffafa')
 .setTitle("**Glossary**")
 .setAuthor('Albertico', '', '')
