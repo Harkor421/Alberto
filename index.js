@@ -40,7 +40,7 @@ Client.on('message', async (message) => {
         .setColor('#fffafa')
         .setTitle("Velocity Formulae")
         .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity**")
-        .setImage('./unknown.png')
+        .setImage('https://i.ibb.co/km1Wr17/unknown.png')
        
 
         const distance = new MessageEmbed() 
