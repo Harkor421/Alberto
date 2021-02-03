@@ -26,7 +26,7 @@ Client.on('message', async (message) => {
 
 if (message.content.startsWith(prefix + "help"))
 
-const glossary = new MessageEmbed() 
+let glossary = new MessageEmbed() 
 .setColor('#fffafa')
 .setTitle("**Glossary**")
 .setAuthor('Albertico', '', '')
