@@ -24,15 +24,17 @@ Client.on('message', async (message) => {
 
     if (!message.content.startsWith(prefix)) return;
 
-if (message.content.startsWith(prefix + "help"))
+if (message.content.startsWith(prefix + "help")){
 
-const glossary = new Discord.MessageEmbed() 
-.setColor('#fffafa')
-.setTitle("**Glossary**")
-.setAuthor('Albertico', '', '')
-.setDescription(`**1. Measurements and uncertainties (coming soon)** \n\n **2. Mechanics    "_mechanics"** \n\n **3. Thermal Physics (coming soon)** \n\n **4. Waves (coming soon)** \n\n **5. Electricity and magnetism (coming soon)** \n\n **6. Circular motion and gravitation (coming soon)** \n\n **7. Atomic, nuclear and particle physics (coming soon)** \n\n **8. Energy production**`)
+    const glossary = new Discord.MessageEmbed() 
+    
+    .setColor('#fffafa')
+    .setTitle("**Glossary**")
+    .setAuthor('Albertico', '', '')
+    .setDescription(`**1. Measurements and uncertainties (coming soon)** \n\n **2. Mechanics    "_mechanics"** \n\n **3. Thermal Physics (coming soon)** \n\n **4. Waves (coming soon)** \n\n **5. Electricity and magnetism (coming soon)** \n\n **6. Circular motion and gravitation (coming soon)** \n\n **7. Atomic, nuclear and particle physics (coming soon)** \n\n **8. Energy production**`)
    
 message.channel.send(glossary);
+}
 
 if (message.content.startsWith(prefix + "mechanics")) {    
         const { MessageEmbed } = require('discord.js');
