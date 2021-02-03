@@ -31,12 +31,12 @@ if (message.content.startsWith(prefix + "help")){
     .setColor('#fffafa')
     .setTitle("**Glossary**")
     .setAuthor('Albertico', '', '')
-    .setDescription(`**1. Measurements and uncertainties (coming soon)** \n\n **2. Mechanics    "_mechanics"** \n\n **3. Thermal Physics (coming soon)** \n\n **4. Waves (coming soon)** \n\n **5. Electricity and magnetism (coming soon)** \n\n **6. Circular motion and gravitation (coming soon)** \n\n **7. Atomic, nuclear and particle physics (coming soon)** \n\n **8. Energy production**`)
+    .setDescription(`**1. Measurements and uncertainties (coming soon)** \n\n **2. Mechanics -----> _mech** \n\n **3. Thermal Physics (coming soon)** \n\n **4. Waves (coming soon)** \n\n **5. Electricity and magnetism (coming soon)** \n\n **6. Circular motion and gravitation (coming soon)** \n\n **7. Atomic, nuclear and particle physics (coming soon)** \n\n **8. Energy production**`)
    
 message.channel.send(glossary);
 }
 
-if (message.content.startsWith(prefix + "mechanics")) {    
+if (message.content.startsWith(prefix + "mech")) {    
         const { MessageEmbed } = require('discord.js');
      
 
