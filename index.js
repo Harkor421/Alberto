@@ -87,10 +87,18 @@ if (message.content.startsWith(prefix + "mech")) {
 
         const power = new MessageEmbed() 
         .setColor('#fffafa')
-        .setTitle("Work Formulae")
+        .setTitle("Power Formulae")
         .setAuthor('MECHANICS', '', '')
         .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
         .setImage('https://media.discordapp.net/attachments/484471959623696394/806666113005387836/unknown.png?width=113&height=156')
+
+        const impulse = new MessageEmbed() 
+        .setColor('#fffafa')
+        .setTitle("Impulse Formulae")
+        .setAuthor('MECHANICS', '', '')
+        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
+        .setImage('https://media.discordapp.net/attachments/484471959623696394/806671308985073675/unknown.png?width=98&height=107')
+
 
 
         const emojiList = ["◀️", "▶️"];
@@ -104,7 +112,8 @@ if (message.content.startsWith(prefix + "mech")) {
             acceleration,
             time,
             work,
-            power
+            power,
+            impulse
         ];
 
         paginationEmbed(message, pages, emojiList, timeout);
