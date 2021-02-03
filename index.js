@@ -44,7 +44,7 @@ if (message.content.startsWith(prefix + "mech")) {
         .setAuthor('MECHANICS', '', '')
         .setColor('#fffafa')
         .setTitle("Velocity Formulae")
-        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity**")
+        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity |m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
         .setImage('https://i.ibb.co/km1Wr17/unknown.png')
        
 
@@ -52,14 +52,14 @@ if (message.content.startsWith(prefix + "mech")) {
         .setColor('#fffafa')
         .setTitle("Distance Travelled Formulae")
         .setAuthor('MECHANICS', '', '')
-        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass**")
+        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
         .setImage('https://media.discordapp.net/attachments/758102244905582613/801190293776105552/unknown.png?width=200&height=302')
 
         const initial = new MessageEmbed() 
         .setColor('#fffafa')
         .setTitle("Initial Velocity Formulae")
         .setAuthor('MECHANICS', '', '')
-        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass**")
+        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
         .setImage('https://i.ibb.co/8DVJCT1/u.png')
        
        
@@ -68,14 +68,14 @@ if (message.content.startsWith(prefix + "mech")) {
         .setColor('#fffafa')
         .setTitle("Acceleration Formulae")
         .setAuthor('MECHANICS', '', '')
-        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass**")
+        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
         .setImage('https://media.discordapp.net/attachments/758102244905582613/801191053046186034/unknown.png?width=146&height=301')
        
         const time = new MessageEmbed() 
         .setColor('#fffafa')
         .setTitle("Time Formulae")
         .setAuthor('MECHANICS', '', '')
-        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass**")
+        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
         .setImage('https://media.discordapp.net/attachments/758102244905582613/801191183828385832/unknown.png?width=213&height=293')
 
         const emojiList = ["◀️", "▶️"];
