@@ -26,7 +26,7 @@ Client.on('message', async (message) => {
 
 if (message.content.startsWith(prefix + "help"))
 
-let glossary = new MessageEmbed() 
+const glossary = new MessageEmbed() 
 .setColor('#fffafa')
 .setTitle("**Glossary**")
 .setAuthor('Albertico', '', '')
@@ -81,7 +81,6 @@ if (message.content.startsWith(prefix + "mechanics")) {
         const timeout = '120000'; 
 
         const pages = [
-            glossary,
             distance, 
             initial,
             velocity,
