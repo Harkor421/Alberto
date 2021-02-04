@@ -99,6 +99,13 @@ if (message.content.startsWith(prefix + "mech")) {
         .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
         .setImage('https://media.discordapp.net/attachments/484471959623696394/806671308985073675/unknown.png?width=98&height=107')
 
+        const kineticenergy = new MessageEmbed() 
+        .setColor('#fffafa')
+        .setTitle("Kinetic Energy Formulae")
+        .setAuthor('MECHANICS', '', '')
+        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
+        .setImage('https://media.discordapp.net/attachments/484471959623696394/806673795867344956/unknown.png?width=165&height=162')
+
 
 
         const emojiList = ["◀️", "▶️"];
@@ -113,7 +120,8 @@ if (message.content.startsWith(prefix + "mech")) {
             time,
             work,
             power,
-            impulse
+            impulse,
+            kineticenergy
         ];
 
         paginationEmbed(message, pages, emojiList, timeout);
