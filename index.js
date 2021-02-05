@@ -31,7 +31,7 @@ if (message.content.startsWith(prefix + "help")){
     .setColor('#fffafa')
     .setTitle("**Glossary**")
     .setAuthor('Albertico', '', '')
-    .setDescription(`**1. Measurements and uncertainties (coming soon)** \n\n **2. Mechanics -----> _mech** \n\n **3. Thermal Physics (coming soon)** \n\n **4. Waves (coming soon)** \n\n **5. Electricity and magnetism (coming soon)** \n\n **6. Circular motion and gravitation (coming soon)** \n\n **7. Atomic, nuclear and particle physics (coming soon)** \n\n **8. Energy production* (coming soon)*`)
+    .setDescription(`**1. Measurements and uncertainties (coming soon)** \n\n **2. Mechanics -----> _mech** \n\n **3. Thermal Physics ------> _thermal** \n\n **4. Waves (coming soon)** \n\n **5. Electricity and magnetism (coming soon)** \n\n **6. Circular motion and gravitation (coming soon)** \n\n **7. Atomic, nuclear and particle physics (coming soon)** \n\n **8. Energy production* (coming soon)*`)
    
 message.channel.send(glossary);
 }
@@ -127,6 +127,13 @@ if (message.content.startsWith(prefix + "mech")) {
         .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
         .setImage('https://media.discordapp.net/attachments/484471959623696394/807053865500409856/unknown.png?width=116&height=96')
 
+        const potential = new MessageEmbed() 
+        .setColor('#fffafa')
+        .setTitle("Potential Energy Formulae")
+        .setAuthor('MECHANICS', '', '')
+        .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight**")
+        .setImage('https://media.discordapp.net/attachments/484471959623696394/807056545745207336/unknown.png?width=170&height=157')
+
 
 
         const emojiList = ["◀️", "▶️"];
@@ -145,12 +152,71 @@ if (message.content.startsWith(prefix + "mech")) {
             work,
             power,
             impulse,
-            kineticenergy
+            kineticenergy,
+            potential
         ];
 
         paginationEmbed(message, pages, emojiList, timeout);
 
         }
+
+        if (message.content.startsWith(prefix + "thermal")) {    
+            const { MessageEmbed } = require('discord.js');
+         
+    
+            const heat = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Heat Formulae")
+            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setImage('https://media.discordapp.net/attachments/484471959623696394/807063792251961345/unknown.png?width=108&height=227')
+
+            const heatcapacity = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Heat Capacity Formulae")
+            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setImage('https://media.discordapp.net/attachments/484471959623696394/807063835092975666/unknown.png?width=90&height=98')
+
+            const specificheatcapacity = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Specific Heat Capacity Formulae")
+            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setImage('https://media.discordapp.net/attachments/484471959623696394/807063904295321610/unknown.png?width=88&height=105')
+
+            const temperature = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Temperature Formulae")
+            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setImage('https://media.discordapp.net/attachments/484471959623696394/807063959168352286/unknown.png?width=92&height=100')
+
+            const masss = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Mass Formulae")
+            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setImage('https://media.discordapp.net/attachments/484471959623696394/807064030975623168/unknown.png?width=94&height=161')
+    
+           
+    
+            const emojiList = ["◀️", "▶️"];
+    
+            const timeout = '120000'; 
+    
+            const pages = [
+              heat,
+              heatcapacity,
+              specificheatcapacity,
+              temperature, 
+              masss,
+            ];
+    
+            paginationEmbed(message, pages, emojiList, timeout);
+    
+            }
+    
 
   
 }
