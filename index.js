@@ -139,7 +139,7 @@ if (message.content.startsWith(prefix + "mech")) {
         .setTitle("Efficiency Formulae")
         .setAuthor('MECHANICS', '', '')
         .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight | n = Efficiency**")
-        .setImage('https://media.discordapp.net/attachments/484471959623696394/807056545745207336/unknown.png?width=170&height=157')
+        .setImage('https://media.discordapp.net/attachments/484471959623696394/807248643072589824/unknown.png')
 
         const emojiList = ["◀️", "▶️"];
 
