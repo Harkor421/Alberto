@@ -62,7 +62,6 @@ if (message.content.startsWith(prefix + "mech")) {
         .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight | n = Efficiency**")
         .setImage('https://i.ibb.co/8DVJCT1/u.png')
        
-       
 
         const acceleration = new MessageEmbed() 
         .setColor('#fffafa')
@@ -182,28 +181,28 @@ if (message.content.startsWith(prefix + "mech")) {
             .setColor('#fffafa')
             .setTitle("Heat Capacity Formulae")
             .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
-            .setImage('https://media.discordapp.net/attachments/484471959623696394/807063835092975666/unknown.png?width=90&height=98')
+            .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038132535656509/unknown.png')
 
             const specificheatcapacity = new MessageEmbed() 
             .setAuthor('THERMAL ENERGY', '', '')
             .setColor('#fffafa')
             .setTitle("Specific Heat Capacity Formulae")
             .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
-            .setImage('https://media.discordapp.net/attachments/484471959623696394/807063904295321610/unknown.png?width=88&height=105')
+            .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038358801973288/unknown.png')
 
             const temperature = new MessageEmbed() 
             .setAuthor('THERMAL ENERGY', '', '')
             .setColor('#fffafa')
             .setTitle("Temperature Formulae")
             .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
-            .setImage('https://media.discordapp.net/attachments/484471959623696394/807063959168352286/unknown.png?width=92&height=100')
+            .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038725493587988/unknown.png')
 
             const masss = new MessageEmbed() 
             .setAuthor('THERMAL ENERGY', '', '')
             .setColor('#fffafa')
             .setTitle("Mass Formulae")
             .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
-            .setImage('https://media.discordapp.net/attachments/484471959623696394/807064030975623168/unknown.png?width=94&height=161')
+            .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038909249716274/unknown.png')
     
            
     
