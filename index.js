@@ -45,7 +45,7 @@ if (message.content.startsWith(prefix + "mech")) {
         .setColor('#fffafa')
         .setTitle("Velocity Formulae")
         .setDescription("**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight | n = Efficiency**")
-        .setImage('https://i.ibb.co/km1Wr17/unknown.png')
+        .setImage('https://media.discordapp.net/attachments/758054030063697951/808027088879484938/unknown.png')
        
 
         const distance = new MessageEmbed() 
