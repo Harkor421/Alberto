@@ -203,6 +203,13 @@ if (message.content.startsWith(prefix + "mech")) {
             .setTitle("Mass Formulae")
             .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
             .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038909249716274/unknown.png')
+
+            const power = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Power Formulae")
+            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setImage('https://media.discordapp.net/attachments/758054030063697951/808039665416405052/unknown.png')
     
            
     
@@ -216,6 +223,7 @@ if (message.content.startsWith(prefix + "mech")) {
               specificheatcapacity,
               temperature, 
               masss,
+              power
             ];
     
             paginationEmbed(message, pages, emojiList, timeout);
