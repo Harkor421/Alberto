@@ -31,7 +31,7 @@ if (message.content.startsWith(prefix + "help")){
     
     .setColor('#fffafa')
     .setTitle("**Glossary**")
-    .setAuthor('Albertico by @Smaciasc709 and @Harkor', '', '')
+    .setAuthor('Albertico by Smaciasc709 and Harkor', '', '')
     .setDescription(`**1. Measurements and uncertainties (coming soon)** \n\n **2. Mechanics -----> _mech** \n\n **3. Thermal Physics ------> _thermal** \n\n **4. Waves (coming soon)** \n\n **5. Electricity and magnetism (coming soon)** \n\n **6. Circular motion and gravitation (coming soon)** \n\n **7. Atomic, nuclear and particle physics (coming soon)** \n\n **8. Energy production (coming soon)**`)
    
 message.channel.send(glossary);
