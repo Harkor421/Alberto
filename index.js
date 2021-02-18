@@ -2,6 +2,7 @@
 const Client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION",] });
 const prefix = "_"
 const paginationEmbed = require('discord.js-pagination');
+const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**"
 
 const { MessageCollector } = require("discord.js-collector");
 
@@ -173,45 +174,64 @@ if (message.content.startsWith(prefix + "mech")) {
             .setAuthor('THERMAL ENERGY', '', '')
             .setColor('#fffafa')
             .setTitle("Heat Formulae")
-            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setDescription(thermalv)
             .setImage('https://media.discordapp.net/attachments/484471959623696394/807063792251961345/unknown.png?width=108&height=227')
 
             const heatcapacity = new MessageEmbed() 
             .setAuthor('THERMAL ENERGY', '', '')
             .setColor('#fffafa')
             .setTitle("Heat Capacity Formulae")
-            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setDescription(thermalv)
             .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038132535656509/unknown.png')
 
             const specificheatcapacity = new MessageEmbed() 
             .setAuthor('THERMAL ENERGY', '', '')
             .setColor('#fffafa')
             .setTitle("Specific Heat Capacity Formulae")
-            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setDescription(thermalv)
             .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038358801973288/unknown.png')
 
             const temperature = new MessageEmbed() 
             .setAuthor('THERMAL ENERGY', '', '')
             .setColor('#fffafa')
             .setTitle("Temperature Formulae")
-            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setDescription(thermalv)
             .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038725493587988/unknown.png')
 
             const masss = new MessageEmbed() 
             .setAuthor('THERMAL ENERGY', '', '')
             .setColor('#fffafa')
             .setTitle("Mass Formulae")
-            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setDescription(thermalv)
             .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038909249716274/unknown.png')
 
             const power = new MessageEmbed() 
             .setAuthor('THERMAL ENERGY', '', '')
             .setColor('#fffafa')
             .setTitle("Power Formulae")
-            .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+            .setDescription(thermalv)
             .setImage('https://media.discordapp.net/attachments/758054030063697951/808039665416405052/unknown.png')
     
-           
+            const volume = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Volume Formulae")
+            .setDescription(thermalv)
+            .setImage('https://media.discordapp.net/attachments/758053041273438340/811773077042102289/unknown.png')
+
+            const pressure = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Pressure Formulae")
+            .setDescription(thermalv)
+            .setImage('https://cdn.discordapp.com/attachments/758053041273438340/811782695746797598/unknown.png')
+
+            const moles = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Moles Formulae")
+            .setDescription(thermalv)
+            .setImage('https://media.discordapp.net/attachments/758053041273438340/811782131646464050/unknown.png')
     
             const emojiList = ["◀️", "▶️"];
     
@@ -223,7 +243,10 @@ if (message.content.startsWith(prefix + "mech")) {
               specificheatcapacity,
               temperature, 
               masss,
-              power
+              power,
+              volume,
+              pressure,
+              moles
             ];
     
             paginationEmbed(message, pages, emojiList, timeout);
