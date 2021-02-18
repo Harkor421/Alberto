@@ -224,7 +224,7 @@ if (message.content.startsWith(prefix + "mech")) {
             .setColor('#fffafa')
             .setTitle("Pressure Formulae")
             .setDescription(thermalv)
-            .setImage('https://cdn.discordapp.com/attachments/758053041273438340/811782695746797598/unknown.png')
+            .setImage('https://media.discordapp.net/attachments/758053041273438340/811783700864958484/unknown.png')
 
             const moles = new MessageEmbed() 
             .setAuthor('THERMAL ENERGY', '', '')
