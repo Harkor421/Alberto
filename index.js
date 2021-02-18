@@ -232,6 +232,20 @@ if (message.content.startsWith(prefix + "mech")) {
             .setTitle("Moles Formulae")
             .setDescription(thermalv)
             .setImage('https://cdn.discordapp.com/attachments/758053041273438340/811784514103017492/unknown.png')
+
+            const internalenergy = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Internal Energy Formulae")
+            .setDescription(thermalv)
+            .setImage('https://cdn.discordapp.com/attachments/758053041273438340/811786266621771806/unknown.png')
+
+            const kineticenergy = new MessageEmbed() 
+            .setAuthor('THERMAL ENERGY', '', '')
+            .setColor('#fffafa')
+            .setTitle("Internal Energy Formulae")
+            .setDescription(thermalv)
+            .setImage('https://cdn.discordapp.com/attachments/758053041273438340/811787411150340146/unknown.png')
     
             const emojiList = ["◀️", "▶️"];
     
@@ -246,7 +260,9 @@ if (message.content.startsWith(prefix + "mech")) {
               power,
               volume,
               pressure,
-              moles
+              moles,
+              internalenergy,
+              kineticenergy
             ];
     
             paginationEmbed(message, pages, emojiList, timeout);
