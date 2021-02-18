@@ -231,7 +231,7 @@ if (message.content.startsWith(prefix + "mech")) {
             .setColor('#fffafa')
             .setTitle("Moles Formulae")
             .setDescription(thermalv)
-            .setImage('https://media.discordapp.net/attachments/758053041273438340/811782131646464050/unknown.png')
+            .setImage('https://cdn.discordapp.com/attachments/758053041273438340/811784514103017492/unknown.png')
     
             const emojiList = ["◀️", "▶️"];
     
