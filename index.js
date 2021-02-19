@@ -2,7 +2,8 @@
 const Client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION",] });
 const prefix = "_"
 const paginationEmbed = require('discord.js-pagination');
-const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**"
+const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**" ;
+const energyv = "**A = Area | E = Energy | E,d = Energy density | E,s = Specific | I = Intensiy | m = mass | P = Power | p = Density | T = Temperature | t = time | V = Volume | v = Velocity**" ;
 
 const { MessageCollector } = require("discord.js-collector");
 
@@ -274,11 +275,11 @@ if (message.content.startsWith(prefix + "mech")) {
                  
             
                     const heat = new MessageEmbed() 
-                    .setAuthor('THERMAL ENERGY', '', '')
+                    .setAuthor('Energy Production', '', '')
                     .setColor('#fffafa')
-                    .setTitle("Heat Formulae")
-                    .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
-                    .setImage('https://media.discordapp.net/attachments/484471959623696394/807063792251961345/unknown.png?width=108&height=227')
+                    .setTitle("Specific Energy Formulae")
+                    .setDescription(energyv)
+                    .setImage('')
                     
                     
                     
