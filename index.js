@@ -287,6 +287,7 @@ if (message.content.startsWith(prefix + "mech")) {
             
                     const pages = [
                       specificenergy,
+                
                      
                     ];
                     paginationEmbed(message, pages, emojiList, timeout);
