@@ -217,8 +217,32 @@ if (message.content.startsWith(prefix + "mech")) {
     
             }
     
-
-  
+            if (message.content.startsWith(prefix + "energy")) {   
+                    const { MessageEmbed } = require('discord.js');
+                 
+            
+                    const heat = new MessageEmbed() 
+                    .setAuthor('THERMAL ENERGY', '', '')
+                    .setColor('#fffafa')
+                    .setTitle("Heat Formulae")
+                    .setDescription("**L= Latent Heat | t = Time | c = Specific Heat Capacity | C= Heat Capacity | P = Power |m = Mass | P = Power | W = Work | E,p = Potential Energy | E,k = Kinetic Energy| T = Temperature**")
+                    .setImage('https://media.discordapp.net/attachments/484471959623696394/807063792251961345/unknown.png?width=108&height=227')
+                    
+                    
+                    
+                    const emojiList = ["◀️", "▶️"];
+    
+                    const timeout = '120000'; 
+            
+                    const pages = [
+                      heat,
+                      heatcapacity,
+                      specificheatcapacity,
+                      temperature, 
+                      masss,
+                    ];
+        
+            }
 }
     catch (err) {
         console.log("Error with the commmands")
