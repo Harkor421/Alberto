@@ -274,27 +274,22 @@ if (message.content.startsWith(prefix + "mech")) {
                     const { MessageEmbed } = require('discord.js');
                  
             
-                    const heat = new MessageEmbed() 
+                    const specificenergy = new MessageEmbed() 
                     .setAuthor('Energy Production', '', '')
                     .setColor('#fffafa')
                     .setTitle("Specific Energy Formulae")
                     .setDescription(energyv)
-                    .setImage('')
-                    
-                    
+                    .setImage('https://cdn.discordapp.com/attachments/758102244905582613/812316903850246185/unknown.png')
                     
                     const emojiList = ["◀️", "▶️"];
     
                     const timeout = '120000'; 
             
                     const pages = [
-                      heat,
-                      heatcapacity,
-                      specificheatcapacity,
-                      temperature, 
-                      masss,
+                      specificenergy,
+                     
                     ];
-        
+                    paginationEmbed(message, pages, emojiList, timeout);
             }
 }
     catch (err) {
