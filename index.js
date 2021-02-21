@@ -286,14 +286,14 @@ if (message.content.startsWith(prefix + "mech")) {
                     .setColor('#fffafa')
                     .setTitle("Energy Density Formulae")
                     .setDescription(energyv)
-                    .setImage('')
+                    .setImage('https://cdn.discordapp.com/attachments/758102244905582613/813077399872602142/unknown.png')
 
                     const energydensity = new MessageEmbed() 
                     .setAuthor('Energy Production', '', '')
                     .setColor('#fffafa')
                     .setTitle("Density Formulae")
                     .setDescription(energyv)
-                    .setImage('')
+                    .setImage('https://cdn.discordapp.com/attachments/758102244905582613/813077485721878538/unknown.png')
                     
                     const emojiList = ["◀️", "▶️"];
     
