@@ -3,7 +3,7 @@ const Client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION",
 const prefix = "_"
 const paginationEmbed = require('discord.js-pagination');
 const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**" ;
-const energyv = "**A = Area | E = Energy | E,d = Energy density | E,s = Specific | I = Intensiy | m = mass | P = Power | p = Density | T = Temperature | t = time | V = Volume | v = Velocity**" ;
+const energyv = "**A = Area | E,d = Energy density | E,s = Specific | I = Intensiy | m = mass | P = Power | p = Density | Q = Energy | T = Temperature | t = time | V = Volume | v = Velocity**" ;
 
 const { MessageCollector } = require("discord.js-collector");
 
@@ -279,7 +279,21 @@ if (message.content.startsWith(prefix + "mech")) {
                     .setColor('#fffafa')
                     .setTitle("Specific Energy Formulae")
                     .setDescription(energyv)
-                    .setImage('https://cdn.discordapp.com/attachments/758102244905582613/812316903850246185/unknown.png')
+                    .setImage('https://cdn.discordapp.com/attachments/758310057757900835/812746576954654750/unknown.png')
+
+                    const energydensity = new MessageEmbed() 
+                    .setAuthor('Energy Production', '', '')
+                    .setColor('#fffafa')
+                    .setTitle("Energy Density Formulae")
+                    .setDescription(energyv)
+                    .setImage('')
+
+                    const energydensity = new MessageEmbed() 
+                    .setAuthor('Energy Production', '', '')
+                    .setColor('#fffafa')
+                    .setTitle("Density Formulae")
+                    .setDescription(energyv)
+                    .setImage('')
                     
                     const emojiList = ["◀️", "▶️"];
     
@@ -287,6 +301,8 @@ if (message.content.startsWith(prefix + "mech")) {
             
                     const pages = [
                       specificenergy,
+                      energydensity,
+                      density,
                 
                      
                     ];
