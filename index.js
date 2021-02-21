@@ -288,7 +288,7 @@ if (message.content.startsWith(prefix + "mech")) {
                     .setDescription(energyv)
                     .setImage('https://cdn.discordapp.com/attachments/758102244905582613/813077399872602142/unknown.png')
 
-                    const energydensity = new MessageEmbed() 
+                    const density = new MessageEmbed() 
                     .setAuthor('Energy Production', '', '')
                     .setColor('#fffafa')
                     .setTitle("Density Formulae")
