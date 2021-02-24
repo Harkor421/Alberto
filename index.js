@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js");
+﻿﻿const Discord = require("discord.js");
 const Client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION",] });
 const prefix = "_"
 const paginationEmbed = require('discord.js-pagination');
@@ -166,6 +166,26 @@ if (message.content.startsWith(prefix + "mech")) {
         paginationEmbed(message, pages, emojiList, timeout);
 
         }
+
+
+        if (message.content.startsWith(prefix + "size")) {
+            var size = Client.guilds.cache.size
+            const embed3= new Discord.MessageEmbed()
+                .setColor('#008000')
+                .setTitle('Estadísticas de Albertico')
+                .setAuthor('Harkor', 'https://i.pinimg.com/originals/c2/da/c2/c2dac21232cc540a50e539c75da7d095.gif', 'https://discord.js.org/%27')
+                .setDescription('Meta de 75 servidores')
+                .setThumbnail('https://i.gifer.com/FE.gif%27')
+                .addFields(
+                    { name: 'Cuantos servidores usan a Albertico', value: '$size' },
+                    { name: '' + size, value: '--->' },
+
+                )
+                .addField('Se aceptan sugerencias', 'Instagram: harkorfn', true)
+                .setTimestamp()
+                .setFooter('Espero que disfrutes el bot!', 'https://lh3.googleusercontent.com/ogw/ADGmqu9vEiBnruOw5eKD-pRdPqg1Oz9EH3db19s6CZE=s32-c-mo%27');
+                 message.author.send(embed3);
+    }
 
         if (message.content.startsWith(prefix + "thermal")) {    
             const { MessageEmbed } = require('discord.js');
