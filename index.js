@@ -1,10 +1,10 @@
-﻿﻿const Discord = require("discord.js");
+﻿const Discord = require("discord.js");
 const Client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION",] });
 const prefix = "_"
 const paginationEmbed = require('discord.js-pagination');
 const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**" ;
 const nukev = "**c = Speed of Light | E = Energy | F = Frequency | m = Mass | v = Speed | λ = Wavelength | Φ = Work Function**" ;
-const energyv = "**A = Area | E,d = Energy density | E,s = Specific | I = Intensiy | m = mass | P = Power | ρ = Density | Q = Energy | T = Temperature | t = time | V = Volume | v = Velocity**" ;
+const energyv = "**A = Area | a = Albedo | E = Energy | E,d = Energy density | E,s = Specific energy | e = emissivity | I = Intensity | m = mass | P = Power | P,B = Power of body | P,Bb = Power of blackbody | P,I = Incident power | P,S = Scattered power | p = Density | r = radius | σ = Stefan-Boltzmann constant | T = Temperature | t = time | V = Volume | v = Velocity**" ;
 
 const { MessageCollector } = require("discord.js-collector");
 
@@ -296,42 +296,42 @@ if (message.content.startsWith(prefix + "mech")) {
              
         
                 const energy = new MessageEmbed() 
-                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
                 .setColor('#fffafa')
                 .setTitle("Energy Formulae")
                 .setDescription(nukev)
                 .setImage('https://media.discordapp.net/attachments/484471959623696394/807063792251961345/unknown.png?width=108&height=227')
     
                 const mass = new MessageEmbed() 
-                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
                 .setColor('#fffafa')
                 .setTitle("Speed Formulae")
                 .setDescription(nukev)
                 .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038132535656509/unknown.png')
     
                 const wavelength = new MessageEmbed() 
-                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
                 .setColor('#fffafa')
                 .setTitle("Frequency Formulae")
                 .setDescription(nukev)
                 .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038358801973288/unknown.png')
     
                 const frequency = new MessageEmbed() 
-                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
                 .setColor('#fffafa')
                 .setTitle("Wavelength Formulae")
                 .setDescription(nukev)
                 .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038725493587988/unknown.png')
     
                 const speed = new MessageEmbed() 
-                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
                 .setColor('#fffafa')
                 .setTitle("Mass Formulae")
                 .setDescription(nukev)
                 .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038909249716274/unknown.png')
     
                 const workfunction = new MessageEmbed() 
-                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
                 .setColor('#fffafa')
                 .setTitle("Work Function Formulae")
                 .setDescription(nukev)
