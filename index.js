@@ -3,7 +3,8 @@ const Client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION",
 const prefix = "_"
 const paginationEmbed = require('discord.js-pagination');
 const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**" ;
-const energyv = "**A = Area | E,d = Energy density | E,s = Specific | I = Intensiy | m = mass | P = Power | p = Density | Q = Energy | T = Temperature | t = time | V = Volume | v = Velocity**" ;
+const nukev = "**c = Speed of Light | E = Energy | F = Frequency | m = Mass | v = Speed | λ = Wavelength | Φ = Work Function**" ;
+const energyv = "**A = Area | E,d = Energy density | E,s = Specific | I = Intensiy | m = mass | P = Power | ρ = Density | Q = Energy | T = Temperature | t = time | V = Volume | v = Velocity**" ;
 
 const { MessageCollector } = require("discord.js-collector");
 
@@ -199,7 +200,7 @@ if (message.content.startsWith(prefix + "mech")) {
             .setDescription(thermalv)
             .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038725493587988/unknown.png')
 
-            const masss = new MessageEmbed() 
+            const mass = new MessageEmbed() 
             .setAuthor('THERMAL ENERGY', '', '')
             .setColor('#fffafa')
             .setTitle("Mass Formulae")
@@ -257,7 +258,7 @@ if (message.content.startsWith(prefix + "mech")) {
               heatcapacity,
               specificheatcapacity,
               temperature, 
-              masss,
+              mass,
               power,
               volume,
               pressure,
@@ -269,6 +270,71 @@ if (message.content.startsWith(prefix + "mech")) {
             paginationEmbed(message, pages, emojiList, timeout);
     
             }
+
+            if (message.content.startsWith(prefix + "nuke")) {    
+                const { MessageEmbed } = require('discord.js');
+             
+        
+                const energy = new MessageEmbed() 
+                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setColor('#fffafa')
+                .setTitle("Energy Formulae")
+                .setDescription(nukev)
+                .setImage('https://media.discordapp.net/attachments/484471959623696394/807063792251961345/unknown.png?width=108&height=227')
+    
+                const mass = new MessageEmbed() 
+                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setColor('#fffafa')
+                .setTitle("Speed Formulae")
+                .setDescription(nukev)
+                .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038132535656509/unknown.png')
+    
+                const wavelength = new MessageEmbed() 
+                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setColor('#fffafa')
+                .setTitle("Frequency Formulae")
+                .setDescription(nukev)
+                .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038358801973288/unknown.png')
+    
+                const frequency = new MessageEmbed() 
+                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setColor('#fffafa')
+                .setTitle("Wavelength Formulae")
+                .setDescription(nukev)
+                .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038725493587988/unknown.png')
+    
+                const speed = new MessageEmbed() 
+                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setColor('#fffafa')
+                .setTitle("Mass Formulae")
+                .setDescription(nukev)
+                .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038909249716274/unknown.png')
+    
+                const workfunction = new MessageEmbed() 
+                .setAuthor('ATOMIC, NUVLEAR AND PARTICLE PHYSICS', '', '')
+                .setColor('#fffafa')
+                .setTitle("Work Function Formulae")
+                .setDescription(nukev)
+                .setImage('https://media.discordapp.net/attachments/758054030063697951/808039665416405052/unknown.png')
+        
+                
+        
+                const emojiList = ["◀️", "▶️"];
+        
+                const timeout = '120000'; 
+        
+                const pages = [
+                  energy,
+                  mass,
+                  wavelength, 
+                  frequency,
+                  speed,
+                  workfunction
+                ];
+        
+                paginationEmbed(message, pages, emojiList, timeout);
+        
+                }
     
             if (message.content.startsWith(prefix + "energy")) {   
                     const { MessageEmbed } = require('discord.js');
