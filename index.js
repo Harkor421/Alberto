@@ -4,7 +4,7 @@ const prefix = "_"
 const paginationEmbed = require('discord.js-pagination');
 const mechv = "**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight | n = Efficiency**"
 const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**" ;
-const nukev = "**c = Speed of Light | E = Energy | f = Frequency | h = Plank's Constant | m = Mass | λ = Wavelength |**" ;
+const nukev = "**c = Speed of Light | E = Energy | f = Frequency | h = Planck's Constant | m = Mass | λ = Wavelength |**" ;
 const energyv = "**A = Area | α = Albedo | E = Energy | E,d = Energy density | E,s = Specific energy | e = emissivity | h = Height | I = Intensity | m = mass | P = Power | P,B = Power of body | P,Bb = Power of blackbody | P,I = Incident power | P,S = Scattered power | p = Density | r = radius | σ = Stefan-Boltzmann constant | T = Temperature | t = time | V = Volume | v = Velocity**" ;
 
 const { MessageCollector } = require("discord.js-collector");
