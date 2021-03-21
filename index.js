@@ -301,7 +301,7 @@ if (message.content.startsWith(prefix + "mech")) {
                 .setColor('#fffafa')
                 .setTitle("Energy Formulae")
                 .setDescription(nukev)
-                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823233733913739314/unknown.png')
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823241455199191131/unknown.png')
     
                 const mass = new MessageEmbed() 
                 .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
