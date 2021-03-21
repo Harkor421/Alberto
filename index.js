@@ -4,7 +4,7 @@ const prefix = "_"
 const paginationEmbed = require('discord.js-pagination');
 const mechv = "**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight | n = Efficiency**"
 const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**" ;
-const nukev = "**c = Speed of Light | E = Energy | F = Frequency | m = Mass | v = Speed | λ = Wavelength | Φ = Work Function**" ;
+const nukev = "**c = Speed of Light | E = Energy | f = Frequency | m = Mass | λ = Wavelength |**" ;
 const energyv = "**A = Area | α = Albedo | E = Energy | E,d = Energy density | E,s = Specific energy | e = emissivity | h = Height | I = Intensity | m = mass | P = Power | P,B = Power of body | P,Bb = Power of blackbody | P,I = Incident power | P,S = Scattered power | p = Density | r = radius | σ = Stefan-Boltzmann constant | T = Temperature | t = time | V = Volume | v = Velocity**" ;
 
 const { MessageCollector } = require("discord.js-collector");
@@ -35,7 +35,7 @@ if (message.content.startsWith(prefix + "help")){
     .setColor('#fffafa')
     .setTitle("**Glossary**")
     .setAuthor('Albertico by Smaciasc709 and Harkor', '', '')
-    .setDescription(`**1. Measurements and uncertainties (coming soon)** \n\n **2. Mechanics → _mech** \n\n **3. Thermal Physics → _thermal** \n\n **4. Waves (coming soon)** \n\n **5. Electricity and magnetism (coming soon)** \n\n **6. Circular motion and gravitation (coming soon)** \n\n **7. Atomic, nuclear and particle physics (coming soon)** \n\n **8. Energy production → _energy**`)
+    .setDescription(`**1. Measurements and uncertainties (coming soon)** \n\n **2. Mechanics → _mech** \n\n **3. Thermal Physics → _thermal** \n\n **4. Waves (coming soon)** \n\n **5. Electricity and magnetism (coming soon)** \n\n **6. Circular motion and gravitation (coming soon)** \n\n **7. Atomic, nuclear and particle physics → _nuke ** \n\n **8. Energy production → _energy**`)
    
 message.channel.send(glossary);
 }
@@ -324,12 +324,8 @@ if (message.content.startsWith(prefix + "mech")) {
                 .setDescription(nukev)
                 .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823239618849013780/unknown.png')
     
-                
-    
-        
-        
-                
-        
+
+
                 const emojiList = ["◀️", "▶️"];
         
                 const timeout = '120000'; 
