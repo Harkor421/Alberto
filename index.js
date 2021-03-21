@@ -385,9 +385,9 @@ if (message.content.startsWith(prefix + "mech")) {
                     const power = new MessageEmbed() 
                     .setAuthor('Energy Production', '', '')
                     .setColor('#fffafa')
-                    .setTitle("Density Formulae")
+                    .setTitle("Power")
                     .setDescription(energyv)
-                    .setImage('https://cdn.discordapp.com/attachments/758102244905582613/813077485721878538/unknown.png')
+                    .setImage('https://discord.com/channels/758016566502883422/758102244905582613/823190780905652244')
                     
                     const emojiList = ["◀️", "▶️"];
     
