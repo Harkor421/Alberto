@@ -372,7 +372,7 @@ if (message.content.startsWith(prefix + "mech")) {
                     .setColor('#fffafa')
                     .setTitle("Power")
                     .setDescription(energyv)
-                    .setImage('https://media.discordapp.net/attachments/758102244905582613/823190780704981033/unknown.png?width=657&height=364')
+                    .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823246225557291098/unknown.png')
                     
                     const emojiList = ["◀️", "▶️"];
     
