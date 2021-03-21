@@ -308,35 +308,25 @@ if (message.content.startsWith(prefix + "mech")) {
                 .setColor('#fffafa')
                 .setTitle("Speed Formulae")
                 .setDescription(nukev)
-                .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038132535656509/unknown.png')
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823239866455556138/unknown.png')
     
                 const wavelength = new MessageEmbed() 
                 .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
                 .setColor('#fffafa')
                 .setTitle("Frequency Formulae")
                 .setDescription(nukev)
-                .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038358801973288/unknown.png')
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823236697759547442/unknown.png')
     
                 const frequency = new MessageEmbed() 
                 .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
                 .setColor('#fffafa')
                 .setTitle("Wavelength Formulae")
                 .setDescription(nukev)
-                .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038725493587988/unknown.png')
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823239618849013780/unknown.png')
     
-                const speed = new MessageEmbed() 
-                .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
-                .setColor('#fffafa')
-                .setTitle("Mass Formulae")
-                .setDescription(nukev)
-                .setImage('https://cdn.discordapp.com/attachments/758054030063697951/808038909249716274/unknown.png')
+                
     
-                const workfunction = new MessageEmbed() 
-                .setAuthor('ATOMIC, NUCLEAR AND PARTICLE PHYSICS', '', '')
-                .setColor('#fffafa')
-                .setTitle("Work Function Formulae")
-                .setDescription(nukev)
-                .setImage('https://media.discordapp.net/attachments/758054030063697951/808039665416405052/unknown.png')
+        
         
                 
         
@@ -349,8 +339,7 @@ if (message.content.startsWith(prefix + "mech")) {
                   mass,
                   wavelength, 
                   frequency,
-                  speed,
-                  workfunction
+                  
                 ];
         
                 paginationEmbed(message, pages, emojiList, timeout);
