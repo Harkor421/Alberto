@@ -2,10 +2,11 @@
 const Client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION",] });
 const prefix = "_"
 const paginationEmbed = require('discord.js-pagination');
-const mechv = "**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal | W = Work | p = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight | n = Efficiency**"
-const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**" ;
+const mechv = "**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal Force | W = Work | ρ = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight | n = Efficiency**"
+const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of Molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**" ;
+const circularv = "**a = Acceleration | F = Force| G = Gravitational Constant | g = Gravity | M = Larger Mass | m = Smaller Mass | r = Radius | T = Period | v = Velocity | ω = Angular Frequency"
 const nukev = "**c = Speed of Light | E = Energy | f = Frequency | h = Planck's Constant | m = Mass | λ = Wavelength |**" ;
-const energyv = "**A = Area | α = Albedo | E = Energy | E,d = Energy density | E,s = Specific energy | e = emissivity | h = Height | I = Intensity | m = mass | P = Power | P,B = Power of body | P,Bb = Power of blackbody | P,I = Incident power | P,S = Scattered power | p = Density | r = radius | σ = Stefan-Boltzmann constant | T = Temperature | t = time | V = Volume | v = Velocity**" ;
+const energyv = "**A = Area | α = Albedo | E = Energy | E,d = Energy density | E,s = Specific energy | e = Emissivity | h = Height | I = Intensity | m = Mass | P = Power | P,B = Power of Body | P,Bb = Power of Blackbody | P,I = Incident Power | P,S = Scattered Power | ρ = Density | Q = Flow Rate | r = Radius | σ = Stefan-Boltzmann Constant | T = Temperature | t = Time | V = Volume | v = Velocity**" ;
 
 const { MessageCollector } = require("discord.js-collector");
 
@@ -291,6 +292,95 @@ if (message.content.startsWith(prefix + "mech")) {
             paginationEmbed(message, pages, emojiList, timeout);
     
             }
+
+            if (message.content.startsWith(prefix + "circular")) {    
+                const { MessageEmbed } = require('discord.js');
+             
+        
+                const acceleration = new MessageEmbed() 
+                .setAuthor('CIRCULAR MOTION AND GRAVITATION', '', '')
+                .setColor('#fffafa')
+                .setTitle("Acceleration Formulae")
+                .setDescription(circularv)
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823241455199191131/unknown.png')
+    
+                const force = new MessageEmbed() 
+                .setAuthor('CIRCULAR MOTION AND GRAVITATION', '', '')
+                .setColor('#fffafa')
+                .setTitle("Force Formulae")
+                .setDescription(circularv)
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823239866455556138/unknown.png')
+    
+                const gravitationlaconstant = new MessageEmbed() 
+                .setAuthor('CIRCULAR MOTION AND GRAVITATION', '', '')
+                .setColor('#fffafa')
+                .setTitle("Gravitational Constant Formulae")
+                .setDescription(circularv)
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823236697759547442/unknown.png')
+    
+                const gravity = new MessageEmbed() 
+                .setAuthor('CIRCULAR MOTION AND GRAVITATION', '', '')
+                .setColor('#fffafa')
+                .setTitle("Gravity Formulae")
+                .setDescription(circularv)
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823239618849013780/unknown.png')
+
+                const largermass = new MessageEmbed() 
+                .setAuthor('CIRCULAR MOTION AND GRAVITATION', '', '')
+                .setColor('#fffafa')
+                .setTitle("Larger Mass Formulae")
+                .setDescription(circularv)
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823239618849013780/unknown.png')
+
+                const smallermass = new MessageEmbed() 
+                .setAuthor('CIRCULAR MOTION AND GRAVITATION', '', '')
+                .setColor('#fffafa')
+                .setTitle("Smaller Mass Formulae")
+                .setDescription(circularv)
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823239618849013780/unknown.png')
+
+                const radius = new MessageEmbed() 
+                .setAuthor('CIRCULAR MOTION AND GRAVITATION', '', '')
+                .setColor('#fffafa')
+                .setTitle("Radius Formulae")
+                .setDescription(circularv)
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823239618849013780/unknown.png')
+
+                const period = new MessageEmbed() 
+                .setAuthor('CIRCULAR MOTION AND GRAVITATION', '', '')
+                .setColor('#fffafa')
+                .setTitle("Period Formulae")
+                .setDescription(circularv)
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823239618849013780/unknown.png')
+
+                const angularfrequency = new MessageEmbed() 
+                .setAuthor('CIRCULAR MOTION AND GRAVITATION', '', '')
+                .setColor('#fffafa')
+                .setTitle("Angular Frequency Formulae")
+                .setDescription(circularv)
+                .setImage('https://cdn.discordapp.com/attachments/758102244905582613/823239618849013780/unknown.png')
+    
+
+
+                const emojiList = ["◀️", "▶️"];
+        
+                const timeout = '120000'; 
+        
+                const pages = [
+                  acceleration,
+                  force,
+                  gravitationlaconstant,
+                  gravity,
+                  largermass,
+                  smallermass,
+                  radius,
+                  period,
+                  angularfrequency
+                ];
+        
+                paginationEmbed(message, pages, emojiList, timeout);
+        
+                }
 
             if (message.content.startsWith(prefix + "nuke")) {    
                 const { MessageEmbed } = require('discord.js');
