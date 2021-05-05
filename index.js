@@ -304,7 +304,7 @@ if (message.content.startsWith(prefix + "mech")) {
                 .setColor('#fffafa')
                 .setTitle("Velocity Formulae")
                 .setDescription(circularv)
-                .setImage('https://media.discordapp.net/attachments/758054030063697951/839306702880768030/unknown.png?width=763&height=377')
+                .setImage('https://media.discordapp.net/attachments/758054030063697951/839321541790662666/unknown.png?width=947&height=382')
 
                 
 
