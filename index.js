@@ -313,12 +313,8 @@ if (message.content.startsWith(prefix + "mech")) {
                 const timeout = '120000'; 
         
                 const pages = [
-                  centripetalforce,
                   velocity,
-                  angularvelocity,
-                  period,
-                  radius,
-
+                  
                 ];
         
                 paginationEmbed(message, pages, emojiList, timeout);
