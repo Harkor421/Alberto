@@ -2,9 +2,9 @@
 const Client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION",] });
 const prefix = "_"
 const paginationEmbed = require('discord.js-pagination');
-const mechv = "**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | P = Power | f = Friction | N = Normal Force | W = Work | ρ = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight | n = Efficiency**"
+const mechv = "**v = Velocity | t = Time | s = Distance Travelled | a = Acceleration | u = Initial Velocity | F = Force | m = Mass | μ = Friction Coefficient | P = Power | f = Friction | N = Normal Force | W = Work | ρ = Momentum | j = Impulse | E,p = Potential Energy | E,k = Kinetic Energy| k = Spring Constant | w = Weight | n = Efficiency**"
 const thermalv = "**A = Area | C = Heat Capacity | c = Specific Heat Capacity | E,k = Kinetic Energy | E,p = Potential Energy | F = Force | k,B = Boltzmann’s Constant | L = Latent Heat | m = Mass | N = Amount of Molecules | n = Moles | N,A = Avogadro’s Constant | P = Power | p = Pressure | Q = Heat | R = Ideal Gas Constant | T = Temperature | t = Time | U = Internal Energy | V = Volume | W = Work |**" ;
-const circularv = "**a = Acceleration | F,C = Centripetal Force| G = Gravitational Constant | g = Gravitational Field | M = Larger Mass | m = Smaller Mass | r = Radius | T = Tension | ፐ = Period | V = Gravitational Potential | v = Velocity | ω = Angular Velocity**" ;
+const circularv = "**a = Acceleration | F,C = Centripetal Force| G = Gravitational Constant | g = Gravitational Field | M = Larger Mass | m = Smaller Mass | μ = Friction Coefficient | r = Radius | T = Tension | ፐ = Period | V = Gravitational Potential | v = Velocity | ω = Angular Velocity**" ;
 const nukev = "**c = Speed of Light | E = Energy | f = Frequency | h = Planck's Constant | m = Mass | λ = Wavelength |**" ;
 const energyv = "**A = Area | α = Albedo | E = Energy | E,d = Energy density | E,s = Specific energy | e = Emissivity | h = Height | I = Intensity | m = Mass | P = Power | P,B = Power of Body | P,Bb = Power of Blackbody | P,I = Incident Power | P,S = Scattered Power | ρ = Density | Q = Flow Rate | r = Radius | σ = Stefan-Boltzmann Constant | T = Temperature | t = Time | V = Volume | v = Velocity**" ;
 
